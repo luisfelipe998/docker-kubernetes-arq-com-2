@@ -7,8 +7,8 @@ metadata:
     kompose.version: 1.31.2 (HEAD)
   creationTimestamp: null
   labels:
-    io.kompose.service: app-udp
-  name: app-udp
+    io.kompose.service: app-tcp
+  name: app-tcp
 spec:
   ports:
     - name: "8080"
