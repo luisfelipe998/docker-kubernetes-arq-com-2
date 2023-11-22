@@ -15,8 +15,8 @@ services:
     networks:
       - network
   app:
-    build: .
-    # image: luisfelipe998/docker-k8s:0.0.1
+    # build: .
+    image: luisfelipe998/docker-k8s:0.0.1
     restart: unless-stopped
     env_file: ./.env
     ports:
