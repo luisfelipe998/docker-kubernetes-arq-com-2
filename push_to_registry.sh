@@ -7,7 +7,7 @@ docker build -t ${NAMESPACE}/${APP_TAG} .
 docker push ${NAMESPACE}/${APP_TAG}
 
 if [ $? -eq 0 ]; then
-    echo "Application image uploaded on: https://hub.docker.com/r/luisfelipe998/docker-k8s"
+    echo "Application image uploaded on: https://hub.docker.com/r/${NAMESPACE}/${APP_NAME}"
 else
     echo "Failed to upload application image. Check logs above."
 fi
