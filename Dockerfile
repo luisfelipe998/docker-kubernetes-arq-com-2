@@ -1,7 +1,12 @@
-FROM mhart/alpine-node:16.4
-WORKDIR /
-COPY ./package.json ./
+FROM node:21 as builder
+WORKDIR /build
+COPY ./package.json /build/package.json
 RUN npm install
-COPY ./src ./src
+
+FROM alpine
+RUN apk add --upgrade nodejs
+WORKDIR /app
+COPY --from=builder /build /app
+COPY ./src /app/src
 EXPOSE 8080
-CMD ["npm", "start"]
+CMD ["node", "./src/index.js"]
