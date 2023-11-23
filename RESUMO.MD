@@ -32,6 +32,8 @@ pdf_options:
 - Fernando Cipriano
 - Luís Felipe Borsoi
 
+A implementação da aplicação pode ser encontrada no repositório: https://github.com/luisfelipe998/docker-kubernetes-arq-com-2
+
 ## Implementação
 
 Neste arquivo será apresentado um resumo da pesquisa e implementação (parcial) de uma aplicação rodando em um ambiente kubernetes de maneira containerizada.
