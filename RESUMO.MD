@@ -383,6 +383,21 @@ Ambos os comandos retornam a mesma reposta que foi retornada quando se chamou ro
 
 Com a aplicação e o banco de dados rodando no cluster local (minikube), pretende-se modificar o descritor de deployment para adicionar mais replicas (pods) da aplicação e realizar o load balancing entre os diversos pods criados. Ainda se está pesquisando a melhor forma de realizar isso. Estamos procurando se há como fazer isso diretamente pelo kubernetes ou se será necessário algum recurso/ferramenta extra no cluster.
 
+### Atualização
+
+Para múltiplos pods com load balancing, deve-se:
+- Modificar o deployment no parâmetro `spec.replicas` para o valor de replicas desejado;
+- Remover o parâmetro `spec.template.spec.containers.port.hostPort`;
+- Rodar `sh k8s_install.sh` novamente;
+- Chamando os endpoints novamente, será possível verificar que a carga é balanceada entre os pods criados. O algoritmo padrão de balanceamento é do tipo aleatório.
+
+Importante:
+- Para verificar com mais facilidade o comportamento de load balancing, enviar nas requests para aplicação header a seguir:
+```
+Connection: close
+```
+Isso irá garantir que uma nova conexão http será criada com o cluster a cada chamada.
+
 ## Referências
 
 ADEKANYE, F. Understanding Docker concepts. Disponível em https://www.section.io/engineering-education/docker-concepts/ Acesso em 21 Nov 20222
