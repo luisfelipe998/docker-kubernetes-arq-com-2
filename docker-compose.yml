@@ -32,6 +32,7 @@ services:
       - network
     labels:
       kompose.service.type: LoadBalancer
+      kompose.service.external-traffic-policy: local
 
 volumes:
   db:

@@ -3,6 +3,7 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: kompose convert -f docker-compose-resolved.yml -o ./k8s
+    kompose.service.external-traffic-policy: local
     kompose.service.type: LoadBalancer
     kompose.version: 1.31.2 (HEAD)
   creationTimestamp: null
@@ -10,6 +11,7 @@ metadata:
     io.kompose.service: app-tcp
   name: app-tcp
 spec:
+  externalTrafficPolicy: Local
   ports:
     - name: "8080"
       port: 8080
