@@ -371,12 +371,12 @@ DOCKER. Use Bind Mounts. Disponível em: https://docs.docker.com/storage/bind-mo
 DOCKER. Use Bridges. Disponível em: https://docs.docker.com/network/bridge/ Acesso em 21 Nov 2023
 DOCKER. Use Volumes. Disponível em: https://docs.docker.com/storage/volumes/ Acesso em 21 Nov 2023
 DOCKER. Use containers to Build, Share and Run your applications. Disponível em https://www.docker.com/resources/what
--container/#:~:text=A%20Docker%20container%20image%20is,tools%2C%20system%20libraries%20and%20settings. Acesso em 21 Nov 2023
+-container/#::text=A%20Docker%20container%20image%20is,tools%2C%20system%20libraries%20and%20settings. Acesso em 21 Nov 2023
 KOMPOSE, Getting Started. Disponível em https://kompose.io/getting-started Acceso em 21 Nov 2023
 KOMPOSE, User Guide. Disponível em https://kompose.io/user-guide Acceso em 21 Nov 2023
 KUBERNETES. Kubernetes. Disponível em kubernetes.io Acesso em 21 Nov 2023
 MCCARTY, S. A Practical Introduction to Container Terminology. Disponível em https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction# Acesso em 21 Nov 2023
-NETAPP. What are containers. Disponível em https://www.netapp.com/devops-solutions/what-are-containers/#:~:text=Benefits%20of%20containers,-Containers%20are%20a&text=Containers%20require%20less%20system%20resources,t%20include%20operating%20system%20images.&text=Applications%20running%20in%20containers%20can,operating%20systems%20and%20hardware%20platforms. Acesso em 21 Nov 2023
+NETAPP. What are containers. Disponível em https://www.netapp.com/devops-solutions/what-are-containers/#::text=Benefits%20of%20containers,-Containers%20are%20a&text=Containers%20require%20less%20system%20resources,t%20include%20operating%20system%20images.&text=Applications%20running%20in%20containers%20can,operating%20systems%20and%20hardware%20platforms. Acesso em 21 Nov 2023
 MONGODB, MongoDB Node Driver. Disponível em https://www.mongodb.com/docs/drivers/node/current/ Acesso em 21 Nov 2023
 SANTOS, L. Entendendo Runtimes de Containers. Disponível em: https://blog.lsantos.dev/entendendo-runtimes-de-containers/ Acesso em 21 Nov 2023
 SANTOS, L. Kubernetes sem Docker? – Entendendo OCI, CRI, e o ecossistema de containers. Disponível em https://blog.lsantos.dev/oci-cri-docker-ecossistema-de-containers/ Acesso em 21 Nov 2023
