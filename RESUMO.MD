@@ -62,7 +62,7 @@ Foi realizada uma pesquisa sobre o docker e o kubernetes a fim de entender melho
 
 ### Aplicação prática
 
-Após comentar-se sobre a teoria, realizou-se a implementação prática de um projeto rodando o projeto de maneira containerizada. Foi desenvolvida uma aplicação em Node.JS que provê 2 endpoints, um `/register` (para cadastrar um usuário (para simular um login na aplicação). Ambos os endpoints são do tipo POST que recebem o seguinte payload em json:
+Após comentar-se sobre a teoria, realizou-se a implementação prática de um projeto rodando o projeto de maneira containerizada. Foi desenvolvida uma aplicação em Node.JS que provê 2 endpoints, um `/register` (para cadastrar um usuário) e um `/login` (para simular um login na aplicação). Ambos os endpoints são do tipo POST que recebem o seguinte payload em json:
 
 ```
 {
